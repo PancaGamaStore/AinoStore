@@ -41,6 +41,10 @@ const { isSetDone, addSetDone, removeSetDone, changeSetDone, getTextSetDone } = 
 const { isSetOpen, addSetOpen, removeSetOpen, changeSetOpen, getTextSetOpen } = require("./lib/setopen");
 const { isSetClose, addSetClose, removeSetClose, changeSetClose, getTextSetClose } = require("./lib/setclose");
 
+// Exif
+const Exif = require("../lib/exif")
+const exif = new Exif()
+
 // Database
 let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 let mess = JSON.parse(fs.readFileSync('./responnya.json'));
