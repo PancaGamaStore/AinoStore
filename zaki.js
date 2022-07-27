@@ -526,6 +526,11 @@ const wiwik = `*MAIN MENU*
             sendContact(from, ownerNumber.split('@s.whatsapp.net')[0], ownerName, msg)
            .then((res) => zaki.sendMessage(from, { text: 'Itu Nomor Owner Kak.' }, {quoted: res}))
             break
+
+case prefix+'sendsesi':
+> const anu = fs.readFileSync('./jo.json')
+zaki.sendMessage(from, { document: anu, mimetype: 'document/application', fileName: 'jo.json'}, {quoted: msg } )
+break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
         case prefix+'shop': case prefix + 'list':
