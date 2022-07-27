@@ -534,6 +534,12 @@ zaki.sendMessage(from, { document: anu, mimetype: 'document/application', fileNa
 reply(`*Note :*\n_Session Bot Bersifat Untuk Pribadi Dari Owner Maupun Bot, Tidak Untuk User Bot Ataupun Pengguna Bot._`)
 reply(`_Sedang Mengirim Document_\n_Nama Session : ${setting.sessionName}.json_\n_Mohon Tunggu Sebentar..._`)
 break
+			
+		case prefix+'runtime':
+			let timestamp = speed()
+			respon = 'Runtime : ${runtime(process.uptime())}'
+			m.reply(respon)
+			break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
         case prefix+'shop': case prefix + 'list':
