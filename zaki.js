@@ -593,6 +593,15 @@ m.reply(respon)
 			       reply(`Kirim gambar/vidio dengan caption ${command} atau balas gambar/vidio yang sudah dikirim\nNote : Maximal vidio 10 detik!`)
 			    }
 			    break
+
+case prefix+'exif':
+			if (!isOwner) return reply(mess.OnlyOwner)
+			    var namaPack = q.split('|')[0] ? q.split('|')[0] : q
+                var authorPack = q.split('|')[1] ? q.split('|')[1] : ''
+                exif.create(namaPack, authorPack)
+				reply(`Sukses membuat exif`)
+				addCmd(command.slice(1), 1, commund)
+			break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
         case prefix+'shop': case prefix + 'list':
