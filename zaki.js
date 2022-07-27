@@ -467,6 +467,7 @@ if (!isCmd && isGroup && checkResponGroup(from, chats, db_respon_group)) {
 const wiwik = `*MAIN MENU*
  • .owner
  • .sendsesi
+ • .runtime
  
 *STORE MENU*
  • .list
@@ -537,8 +538,9 @@ break
 			
 		case prefix+'runtime':
 			let timestamp = speed()
-			respon = 'Runtime : ${runtime(process.uptime())}'
-			m.reply(respon)
+let latensi = speed() - timestamp
+respon = `Runtime : ${runtime(process.uptime())}`
+m.reply(respon)
 			break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
