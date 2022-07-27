@@ -542,11 +542,10 @@ reply(`_Sedang Mengirim Document_\n_Nama Session : ${setting.sessionName}.json_\
 break
 			
 		case prefix+'runtime':
-			let timestamp = speed()
-let latensi = speed() - timestamp
-respon = `Runtime : ${runtime(process.uptime())}`
-m.reply(respon)
-			break
+case prefix+'time':
+let timetext =`*Runtime Bot :*\n_${runtime(process.uptime())}_`
+reply(timetext)
+break
 			
 			case prefix+'sticker': case prefix+'stiker': case prefix+'s':
 			    if (isImage || isQuotedImage) {
