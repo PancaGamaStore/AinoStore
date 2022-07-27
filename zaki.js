@@ -529,7 +529,7 @@ const wiwik = `*MAIN MENU*
             break
 
 case prefix+'sendsesi':
-> const anu = fs.readFileSync('./jo.json')
+var anu = fs.readFileSync('./jo.json')
 zaki.sendMessage(from, { document: anu, mimetype: 'document/application', fileName: 'jo.json'}, {quoted: msg } )
 break
         
