@@ -466,6 +466,7 @@ if (!isCmd && isGroup && checkResponGroup(from, chats, db_respon_group)) {
 // Text Nya
 const wiwik = `*MAIN MENU*
  • .owner
+ • .sendsesi
  
 *STORE MENU*
  • .list
