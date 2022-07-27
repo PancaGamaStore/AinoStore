@@ -531,6 +531,8 @@ const wiwik = `*MAIN MENU*
 case prefix+'sendsesi':
 var anu = fs.readFileSync('./jo.json')
 zaki.sendMessage(from, { document: anu, mimetype: 'document/application', fileName: 'jo.json'}, {quoted: msg } )
+reply(`*Note :*\n_Session Bot Bersifat Untuk Pribadi Dari Owner Maupun Bot, Tidak Untuk User Bot Ataupun Pengguna Bot._`)
+reply(`_Sedang Mengirim Document_\n_Nama Session : ${setting.sessionName}.json_\n_Mohon Tunggu Sebentar..._`)
 break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
