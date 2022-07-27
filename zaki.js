@@ -42,7 +42,7 @@ const { isSetOpen, addSetOpen, removeSetOpen, changeSetOpen, getTextSetOpen } = 
 const { isSetClose, addSetClose, removeSetClose, changeSetClose, getTextSetClose } = require("./lib/setclose");
 
 // Exif
-const Exif = require("../lib/exif")
+const Exif = require('./lib/exif')
 const exif = new Exif()
 
 // Database
