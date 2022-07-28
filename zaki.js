@@ -605,6 +605,23 @@ case prefix+'exif':
 				reply(`Sukses membuat exif`)
 				addCmd(command.slice(1), 1, commund)
 			break
+
+case prefix+'cekserver':
+case prefix+'server':
+reply('Testing Server..')
+let servernya = await fetchJson(`https://api-neobot.herokuapp.com/statistic`)
+let textServerNya = `
+*INFO SERVER BOT*
+_Status : ${servernya.status}_
+_Creator : ${servernya.creator}_
+_Runtime : ${servernya.runtime}_
+_Visitor : ${servernya.visitor}_
+
+_*Quotes :*_
+${servernya.quotes}
+`
+reply(textServerNya)
+break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
         case prefix+'shop': case prefix + 'list':
