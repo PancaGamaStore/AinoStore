@@ -556,8 +556,227 @@ reply(`*Menu Layanan*🛍️
 *LAINNYA*
  • ROOM TUR`)
 break
-        
-        case prefix+'owner': case prefix+'dev':
+	
+			case prefix+'dm ml':
+reply(`*ML PAKET A*
+_1-10 MENIT | VIA ID_
+
+86 💎 = Rp20.000
+172 💎 = Rp40.000
+257 💎 = Rp60.000
+344 💎 = Rp80.000
+429 💎 = Rp100.000
+514 💎 = Rp119.000
+706 💎 = Rp159.000
+792 💎 = Rp179.000
+878 💎 = Rp199.000
+963 💎 = Rp219.000
+1412 💎 = Rp318.000
+2195 💎 = Rp476.000
+3688 💎 = Rp793.000
+4394 💎 = Rp951.000
+5532 💎 = Rp1.189.000
+6238 💎 = Rp1.348.000
+7727 💎 = Rp1.665.000
+9288 💎 = Rp1.982.000
+
+SL/TW = Rp130.000
+SL++ = Rp297.000
+
+*ML PAKET B*
+_15-120 MENIT | VIA ID_
+
+129 💎 = Rp31.000
+194 💎 = Rp46.000
+530 💎 = Rp123.000
+1647 💎 = Rp366.000
+2767 💎 = Rp610.000
+4150 💎 = Rp886.000
+6966 💎 = Rp1.480.000`)
+break
+	
+			case prefix+'dm ff':
+reply(`*DM FF*
+_1-10 MENIT | VIA ID_
+
+5💎 = Rp900
+20💎 = Rp3.000
+50💎 = Rp7.000
+70💎 = Rp10.000
+100💎 = Rp14.000
+140💎 = Rp20.000
+210💎 = Rp29.000
+355💎 = Rp48.000
+500💎 = Rp68.000
+720💎 = Rp96.000
+1000💎 = Rp136.000
+2000💎 = Rp261.000
+7290💎 = Rp957.000
+36.500💎 = Rp4.785.000
+73.100💎 = Rp9.570.000
+
+MM 💳 = 29.000
+MB 💳 = Rp145.000`)
+break
+			
+			case prefix+'uc pubgm':
+reply(`UC PUBGM INDO
+5-30 MENIT | VIA ID
+
+26 UC 💵 : Rp5.000
+52 UC 💵 : Rp10.000
+105 UC 💵 : Rp20.000
+131 UC 💵 : Rp25.000
+156 UC 💵 : Rp30.000
+183 UC 💵 : Rp34.000
+210 UC 💵 : Rp39.000
+263 UC 💵 : Rp49.000
+315 UC 💵 : Rp58.000
+419 UC 💵 : Rp77.000
+530 UC 💵 : Rp95.000
+582 UC 💵 : Rp105.000
+635 UC 💵 : Rp115.000
+733 UC 💵 : Rp135.000
+825 UC 💵 : Rp144.000
+930 UC 💵 : Rp163.000
+1008 UC 💵 : Rp178.000
+1630 UC 💵 : Rp285.000
+2200 UC 💵 : Rp375.000
+3300 UC 💵 : Rp552.000`)
+break
+			
+			case prefix+'chip':
+reply(`*TOP UP CHIP*
+_1-20 MENIT | VIA ID_
+
+100M Koin Emas-D🪙: Rp7.000
+200M Koin Emas-D🪙: Rp13.000
+300M Koin Emas-D🪙: Rp19.500
+400M Koin Emas-D🪙: Rp26.000
+500M Koin Emas-D🪙: Rp32.500
+600M Koin Emas-D🪙: Rp39.000
+700M Koin Emas-D🪙: Rp45.500
+800M Koin Emas-D🪙: Rp52.000
+900M Koin Emas-D🪙: Rp58.500
+1B Koin Emas-D🪙:Rp65.000
+
+*BONGKAR CHIP*
+_FAST SELAGI ON_
+
+100M : Rp5.000
+200M : Rp11.000
+300M : Rp.16.500
+400M : Rp22.000
+500M : Rp27.500
+1B - 4B : Rp58.000
+
+*Kirim Chip Bongkaran Ke :*
+ID : 288944661
+NICK : M2004J19C
+PP : Kodok Ijo`)
+break
+			
+			case prefix+'genshin':
+reply(`GENESIS CRYSTALS GENSHIN IMPACT
+5-30 MENIT | VIA ID
+
+60 💎 = Rp14.000
+300+30 💎 = Rp65.000
+980+110 💎 = Rp190.000
+1980+260 💎 = Rp410.000
+3280+600 💎 = Rp625.000
+6480+1600 💎 = Rp1.250.000
+
+Blessing = Rp65.000`)
+break
+			
+			case prefix+'apex':
+reply(`*SYNDICATE GOLD APEX LEGENDS MOBILE*
+_5-25 MENIT | VIA ID_
+
+90 🪙 = Rp16.000
+280 🪙 = Rp33.000
+500 🪙 = Rp61.000
+1050 🪙 = Rp119.000
+2150 🪙 = Rp235.000
+5650 🪙 = Rp570.000
+11500 🪙 = Rp1.140.000
+23500 🪙 = Rp2.250.000`)
+break
+			
+			case prefix+'coa mlbb':
+reply(`*SUBSCRIBE COA MONTHLY PASS*
+_VIA LOGIN MOONTON/FB ONLY_
+
+COA FAST 🌟 : Rp70.000 (Max 3Jam)
+COA SLOW 🌟 : Rp65.000 (Max 24Jam)
+
+*Keuntungan COA :*
+- Harga Murah, 1 COA setara dengan 1 Diamond
+- Kegunaan COA adalah untuk Spin event Grand Collection, Zodiac Summon, Aurora Summon, Magic Wheel, dsb....
+- 1Bulan langganan COA Total di dapat 1100🌟 atau setara 1100 💎
+- Terhitung Misi Top Up di Event sebesar 400 💎
+
+*Ketentuan :*
+- Lakukan Pembayaran Sesuai List yg di pilih (Fast/Slow)
+- Isi Form Top Up COA yg di berikan Admin (Via Pribadi Chat)
+- V2L Akun Wajib Mati Selama Proses Order
+- Data Akun Kirim ke Pribadi Chat`)
+break
+			
+case prefix+'yt prem':
+reply(`*YouTube PREMIUM*
+_1-30 MENIT_
+
+1 Bulan = Rp2.000`)
+break
+			
+			case prefix+'amazon':
+reply(`*AMAZON PRIME VIDEO*
+_15-120 MENIT_
+
+7 Hari = Rp13.000`)
+break
+	
+			case prefix+'netflix':
+reply(`*NETFLIX PREMIUM*
+_15-120 MENIT | ADMIN_
+
+3 Hari = Rp8.000
+7 Hari = Rp13.000
+1 Bulan = Rp25.000`)
+break
+			
+			case prefix+'disney+':
+reply(`*DISNEY+ HOTSTAR*
+_15-120 MENIT_
+
+1Bulan = Rp20.000`)
+break
+			
+	case prefix+'wetv':
+reply(`*WETV PREMIUM*
+_15-120 MENIT_
+
+1 Bulan = Rp10.000
+1 Tahun = Rp35.000`)
+break
+			
+	case prefix+'iqiyi':
+reply(`*IQIYI PREMIUM*
+_15-120 MENIT_
+
+1 Bulan = Rp15.000`)
+break	
+			
+			case prefix+'spotify':
+reply(`*SPOTIFY PREMIUM*
+_15-120 MENIT | INDO_
+
+2 Bulan = Rp15.000`)
+break
+			
+case prefix+'owner': case prefix+'dev':
             sendContact(from, ownerNumber.split('@s.whatsapp.net')[0], ownerName, msg)
            .then((res) => zaki.sendMessage(from, { text: 'Itu Nomor Owner Kak.' }, {quoted: res}))
             break
