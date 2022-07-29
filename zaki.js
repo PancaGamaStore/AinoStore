@@ -473,7 +473,7 @@ const wiwik = `*MAIN MENU*
  • .sticker
  
 *STORE MENU*
- • .list
+ • .shop
  • .addlist
  • .dellist
  • .update
@@ -528,6 +528,34 @@ const wiwik = `*MAIN MENU*
                    var media = await reSize(setting.pathimg, 300, 200)
                    zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
                    break
+			
+			case prefix+'list':
+reply(`*Menu Layanan*🛍️
+ 
+ *VIA ID*
+ • DM ML
+ • DM FF
+ • UC PUBGM
+ • CHIP
+ • GENSHIN
+ • APEX
+
+*VIA LOGIN*
+ • COA MLBB
+
+*APK PREMIUM*
+ • YT PREM
+ • AMAZON
+ • NETFLIX
+ • DISNEY+
+ • WETV
+ • IQIYI
+ • SPORTIFY
+ • CANVAA
+
+*LAINNYA*
+ • ROOM TUR`)
+break
         
         case prefix+'owner': case prefix+'dev':
             sendContact(from, ownerNumber.split('@s.whatsapp.net')[0], ownerName, msg)
@@ -624,7 +652,7 @@ reply(textServerNya)
 break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
-        case prefix+'shop': case prefix + 'list':
+        case prefix+'shop':
             if (!isGroup) return reply(mess.OnlyGrup)
             if (db_respon_list.length === 0) return reply(`Belum ada list message di database`)
             if (!isAlreadyResponListGroup(from, db_respon_list)) return reply(`Belum ada list message yang terdaftar di group ini`)
