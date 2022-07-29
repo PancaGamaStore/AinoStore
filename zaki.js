@@ -534,18 +534,18 @@ const wiwik = `*MAIN MENU*
 reply(`*Menu Layanan*🛍️
  
  *VIA ID*
- • DM ML
- • DM FF
- • UC PUBGM
+ • DMML
+ • DMFF
+ • UCPUBGM
  • CHIP
  • GENSHIN
  • APEX
 
 *VIA LOGIN*
- • COA MLBB
+ • COAMLBB
 
 *APK PREMIUM*
- • YT PREM
+ • YTPREM
  • AMAZON
  • NETFLIX
  • DISNEY+
@@ -555,10 +555,10 @@ reply(`*Menu Layanan*🛍️
  • CANVAA
 
 *LAINNYA*
- • ROOM TUR`)
+ • ROOMTUR`)
 break
 	
-			case 'dm ml':
+			case 'dmml':
 			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*ML PAKET A*
 _1-10 MENIT | VIA ID_
@@ -597,7 +597,7 @@ _15-120 MENIT | VIA ID_
 6966 💎 = Rp1.480.000`)
 break
 	
-			case 'dm ff':
+			case 'dmff':
 			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*DM FF*
 _1-10 MENIT | VIA ID_
@@ -622,7 +622,7 @@ MM 💳 = 29.000
 MB 💳 = Rp145.000`)
 break
 			
-			case 'uc pubgm':
+			case 'ucpubgm':
 			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`UC PUBGM INDO
 5-30 MENIT | VIA ID
@@ -711,7 +711,7 @@ _5-25 MENIT | VIA ID_
 23500 🪙 = Rp2.250.000`)
 break
 			
-			case 'coa mlbb':
+			case 'coamlbb':
 			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*SUBSCRIBE COA MONTHLY PASS*
 _VIA LOGIN MOONTON/FB ONLY_
@@ -732,7 +732,7 @@ COA SLOW 🌟 : Rp65.000 (Max 24Jam)
 - Data Akun Kirim ke Pribadi Chat`)
 break
 			
-case 'yt prem':
+case 'ytprem':
 if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*YouTube PREMIUM*
 _1-30 MENIT_
@@ -799,7 +799,7 @@ _15-120 MENIT_
 1 Tahun = Rp17.000`)
 break
 			
-			case 'room tur':
+			case 'roomtur':
 			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*SEWA ROOM TOURNAMENT*
 _Tanyakan Jadwal Kosong ke Admin‼️_
