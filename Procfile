@@ -1,1 +1,1 @@
-worker: node . --db 'mongodb+srv://whatsapp:ainobot1002@wa-bot.h2hlfar.mongodb.net/?retryWrites=true&w=majority'
+worker :  npm i && npm i pm2 -g && pm2 install ffmpeg && pm2 start main.js && pm2 save && pm2 logs
