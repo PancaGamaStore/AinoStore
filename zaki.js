@@ -751,7 +751,7 @@ break
 			case 'netflix':
 			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*NETFLIX PREMIUM*
-_15-120 MENIT | ADMIN_
+_15-120 MENIT_
 
 3 Hari = Rp8.000
 7 Hari = Rp13.000
