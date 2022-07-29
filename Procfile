@@ -1,1 +1,1 @@
-worker :  npm i && npm i pm2 -g && pm2 install ffmpeg && pm2 start index.js && pm2 start zaki.js && pm2 save && pm2 logs
+worker: node . --db 'mongodb+srv://jo1002:johangame1002@cluster0.djoak.mongodb.net/?retryWrites=true&w=majority'
