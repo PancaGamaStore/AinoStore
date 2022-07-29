@@ -530,6 +530,7 @@ const wiwik = `*MAIN MENU*
                    break
 			
 			case prefix+'store':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*Menu Layanan*🛍️
  
  *VIA ID*
@@ -558,6 +559,7 @@ reply(`*Menu Layanan*🛍️
 break
 	
 			case 'dm ml':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*ML PAKET A*
 _1-10 MENIT | VIA ID_
 
@@ -596,6 +598,7 @@ _15-120 MENIT | VIA ID_
 break
 	
 			case 'dm ff':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*DM FF*
 _1-10 MENIT | VIA ID_
 
@@ -620,6 +623,7 @@ MB 💳 = Rp145.000`)
 break
 			
 			case 'uc pubgm':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`UC PUBGM INDO
 5-30 MENIT | VIA ID
 
@@ -646,6 +650,7 @@ reply(`UC PUBGM INDO
 break
 			
 			case 'chip':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*TOP UP CHIP*
 _1-20 MENIT | VIA ID_
 
@@ -677,6 +682,7 @@ PP : Kodok Ijo`)
 break
 			
 			case 'genshin':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`GENESIS CRYSTALS GENSHIN IMPACT
 5-30 MENIT | VIA ID
 
@@ -691,6 +697,7 @@ Blessing = Rp65.000`)
 break
 			
 			case 'apex':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*SYNDICATE GOLD APEX LEGENDS MOBILE*
 _5-25 MENIT | VIA ID_
 
@@ -705,6 +712,7 @@ _5-25 MENIT | VIA ID_
 break
 			
 			case 'coa mlbb':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*SUBSCRIBE COA MONTHLY PASS*
 _VIA LOGIN MOONTON/FB ONLY_
 
@@ -725,6 +733,7 @@ COA SLOW 🌟 : Rp65.000 (Max 24Jam)
 break
 			
 case 'yt prem':
+if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*YouTube PREMIUM*
 _1-30 MENIT_
 
@@ -732,6 +741,7 @@ _1-30 MENIT_
 break
 			
 			case 'amazon':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*AMAZON PRIME VIDEO*
 _15-120 MENIT_
 
@@ -739,6 +749,7 @@ _15-120 MENIT_
 break
 	
 			case 'netflix':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*NETFLIX PREMIUM*
 _15-120 MENIT | ADMIN_
 
@@ -748,6 +759,7 @@ _15-120 MENIT | ADMIN_
 break
 			
 			case 'disney+':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*DISNEY+ HOTSTAR*
 _15-120 MENIT_
 
@@ -755,6 +767,7 @@ _15-120 MENIT_
 break
 			
 	case 'wetv':
+	if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*WETV PREMIUM*
 _15-120 MENIT_
 
@@ -763,6 +776,7 @@ _15-120 MENIT_
 break
 			
 	case 'iqiyi':
+	if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*IQIYI PREMIUM*
 _15-120 MENIT_
 
@@ -770,6 +784,7 @@ _15-120 MENIT_
 break	
 			
 			case 'spotify':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*SPOTIFY PREMIUM*
 _15-120 MENIT | INDO_
 
@@ -777,6 +792,7 @@ _15-120 MENIT | INDO_
 break
 			
 			case 'canvaa':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*CANVAA PRO*
 _15-120 MENIT_
 
@@ -784,6 +800,7 @@ _15-120 MENIT_
 break
 			
 			case 'room tur':
+			if (!isGroup) return reply(mess.OnlyGrup)
 reply(`*SEWA ROOM TOURNAMENT*
 _Tanyakan Jadwal Kosong ke Admin‼️_
 
