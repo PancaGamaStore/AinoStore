@@ -529,7 +529,7 @@ const wiwik = `*MAIN MENU*
                    zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
                    break
 			
-			case prefix+'list':
+			case prefix+'store':
 reply(`*Menu Layanan*🛍️
  
  *VIA ID*
