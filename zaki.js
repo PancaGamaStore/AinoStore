@@ -550,14 +550,14 @@ reply(`*Menu Layanan*🛍️
  • DISNEY+
  • WETV
  • IQIYI
- • SPORTIFY
+ • SPOTIFY
  • CANVAA
 
 *LAINNYA*
  • ROOM TUR`)
 break
 	
-			case prefix+'dm ml':
+			case 'dm ml':
 reply(`*ML PAKET A*
 _1-10 MENIT | VIA ID_
 
@@ -595,7 +595,7 @@ _15-120 MENIT | VIA ID_
 6966 💎 = Rp1.480.000`)
 break
 	
-			case prefix+'dm ff':
+			case 'dm ff':
 reply(`*DM FF*
 _1-10 MENIT | VIA ID_
 
@@ -619,7 +619,7 @@ MM 💳 = 29.000
 MB 💳 = Rp145.000`)
 break
 			
-			case prefix+'uc pubgm':
+			case 'uc pubgm':
 reply(`UC PUBGM INDO
 5-30 MENIT | VIA ID
 
@@ -645,7 +645,7 @@ reply(`UC PUBGM INDO
 3300 UC 💵 : Rp552.000`)
 break
 			
-			case prefix+'chip':
+			case 'chip':
 reply(`*TOP UP CHIP*
 _1-20 MENIT | VIA ID_
 
@@ -676,7 +676,7 @@ NICK : M2004J19C
 PP : Kodok Ijo`)
 break
 			
-			case prefix+'genshin':
+			case 'genshin':
 reply(`GENESIS CRYSTALS GENSHIN IMPACT
 5-30 MENIT | VIA ID
 
@@ -690,7 +690,7 @@ reply(`GENESIS CRYSTALS GENSHIN IMPACT
 Blessing = Rp65.000`)
 break
 			
-			case prefix+'apex':
+			case 'apex':
 reply(`*SYNDICATE GOLD APEX LEGENDS MOBILE*
 _5-25 MENIT | VIA ID_
 
@@ -704,7 +704,7 @@ _5-25 MENIT | VIA ID_
 23500 🪙 = Rp2.250.000`)
 break
 			
-			case prefix+'coa mlbb':
+			case 'coa mlbb':
 reply(`*SUBSCRIBE COA MONTHLY PASS*
 _VIA LOGIN MOONTON/FB ONLY_
 
@@ -724,21 +724,21 @@ COA SLOW 🌟 : Rp65.000 (Max 24Jam)
 - Data Akun Kirim ke Pribadi Chat`)
 break
 			
-case prefix+'yt prem':
+case 'yt prem':
 reply(`*YouTube PREMIUM*
 _1-30 MENIT_
 
 1 Bulan = Rp2.000`)
 break
 			
-			case prefix+'amazon':
+			case 'amazon':
 reply(`*AMAZON PRIME VIDEO*
 _15-120 MENIT_
 
 7 Hari = Rp13.000`)
 break
 	
-			case prefix+'netflix':
+			case 'netflix':
 reply(`*NETFLIX PREMIUM*
 _15-120 MENIT | ADMIN_
 
@@ -747,14 +747,14 @@ _15-120 MENIT | ADMIN_
 1 Bulan = Rp25.000`)
 break
 			
-			case prefix+'disney+':
+			case 'disney+':
 reply(`*DISNEY+ HOTSTAR*
 _15-120 MENIT_
 
 1Bulan = Rp20.000`)
 break
 			
-	case prefix+'wetv':
+	case 'wetv':
 reply(`*WETV PREMIUM*
 _15-120 MENIT_
 
@@ -762,18 +762,55 @@ _15-120 MENIT_
 1 Tahun = Rp35.000`)
 break
 			
-	case prefix+'iqiyi':
+	case 'iqiyi':
 reply(`*IQIYI PREMIUM*
 _15-120 MENIT_
 
 1 Bulan = Rp15.000`)
 break	
 			
-			case prefix+'spotify':
+			case 'spotify':
 reply(`*SPOTIFY PREMIUM*
 _15-120 MENIT | INDO_
 
 2 Bulan = Rp15.000`)
+break
+			
+			case 'canvaa':
+reply(`*CANVAA PRO*
+_15-120 MENIT_
+
+1 Tahun = Rp17.000`)
+break
+			
+			case 'room tur':
+reply(`*SEWA ROOM TOURNAMENT*
+_Tanyakan Jadwal Kosong ke Admin‼️_
+
+*SCRIM, EVENT, BY ONE*
+
+1 Match = Rp35.000
+2 Match = Rp65.000
+3 Match = Rp100.000
+4 Match = Rp125.000
+5 Match = Rp155.000
+
+🔻 *FORMAT SEWA ROOM TOURNAMENT* 🔻
+
+*Benefit*🎉
+>> All Hero, Skin Unlock ( Bebas Pakai Hero & Skin )
+>> Draft BAN 6/10
+>> Emblem Max
+>> History Match Turnament ( Layaknya Pro-Player )
+>> View Match Luas ( 4cam )
+
+*RULES*📌
+>> 10 Menit sebelum jadwal harus ready
+>> Keterlambatan Max 5 Menit
+>> Dilarang main Rank/Classic dengan waktu bersamaan Room Tour, Maka Order kalian akan hangus
+>> Jika order dihitung mulai didalam Room (Admin akan Pause berarti isyarat untuk kalian wajib surend)
+>> Jika sudah transfer tidak bisa cancel
+>> Room ±delay 5-10 Menit, Harap di maklumi ;)`)
 break
 			
 case prefix+'owner': case prefix+'dev':
