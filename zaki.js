@@ -528,6 +528,10 @@ const wiwik = `*MAIN MENU*
                    var media = await reSize(setting.pathimg, 300, 200)
                    zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
                    break
+
+case prefix+'id':
+reply(from)
+break
 			
 			case prefix+'store':
 			if (!isGroup) return reply(mess.OnlyGrup)
