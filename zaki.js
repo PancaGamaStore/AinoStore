@@ -471,6 +471,7 @@ if (!isCmd && isGroup && checkResponGroup(from, chats, db_respon_group)) {
 const wiwik = `*MAIN MENU*
  • .owner
  • .sticker
+ • .tiktok
  
 *STORE MENU*
  • .shop
@@ -528,6 +529,17 @@ const wiwik = `*MAIN MENU*
                    var media = await reSize(setting.pathimg, 300, 200)
                    zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
                    break
+			
+			case prefix+'tiktok':
+if (!q) return reply(`FORMAT TIKTOK DOWNLOAD\nExample:\n${command} UrlTiktok\n\nContoh:\n${command} https://vt.tiktok.com/ZSdqSfBxG/?k=1`)
+
+var LinkTikTok = body.slice(8)
+reply(mess.wait)
+
+let tt = await fetchJson(`https://api-neobot.herokuapp.com/api/dowloader/tikok?url=${LinkTikTok}`)
+let tiktok = tt.result
+zaki.sendMessage(from, { video: { url: tiktok.video_original }, caption: `Download From ${LinkTikTok}`}, { quoted: msg})
+break
 
 case prefix+'id':
 reply(from)
