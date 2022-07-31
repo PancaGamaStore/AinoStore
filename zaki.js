@@ -1212,7 +1212,7 @@ await zaki.sendMessage(`${args[1]}@s.whatsapp.net`, {text: sukses });
                 if (textOpen !== undefined) {
                     reply(textOpen);
                 } else {
-                    reply(`Sukses mengizinkan semua peserta dapat mengirim pesan ke grup ini`)
+                    reply(`Grup Telah Dibuka, Silahkan Order`)
                 }
             })
             .catch((err) => reply('Error'))
@@ -1227,7 +1227,7 @@ await zaki.sendMessage(`${args[1]}@s.whatsapp.net`, {text: sukses });
                 if (textClose !== undefined) {
                     reply(textClose);
                 } else {
-                    reply(`Sukses mengizinkan hanya admin yang dapat mengirim pesan ke grup ini`)
+                    reply(`Close Order, Lanjut Besok Setelah Grup Dibuka`)
                 }
             })
             .catch((err) => reply('Error'))
