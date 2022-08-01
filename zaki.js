@@ -536,7 +536,7 @@ if (!q) return reply(`FORMAT TIKTOK DOWNLOAD\nExample:\n${command} UrlTiktok\n\n
 var LinkTikTok = body.slice(8)
 reply(mess.wait)
 
-let tt = await fetchJson(`https://api-neobot.herokuapp.com/api/dowloader/tikok?url=${LinkTikTok}`)
+let tt = await fetchJson(`https://api-lexxy-official.herokuapp.com/api/dowloader/tikok?url=${LinkTikTok}`)
 let tiktok = tt.result
 zaki.sendMessage(from, { video: { url: tiktok.video_original }, caption: `Download From ${LinkTikTok}`}, { quoted: msg})
 break
