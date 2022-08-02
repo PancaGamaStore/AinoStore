@@ -529,36 +529,20 @@ const wiwik = `*MAIN MENU*
                    var media = await reSize(setting.pathimg, 300, 200)
                    zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
                    break
-			
-			case prefix+'tiktok':
-if (!q) return reply(`FORMAT TIKTOK DOWNLOAD\nExample:\n${command} UrlTiktok\n\nContoh:\n${command} https://vt.tiktok.com/ZSdqSfBxG/?k=1`)
-
-var LinkTikTok = body.slice(8)
-reply(mess.wait)
-
-let tt = await fetchJson(`https://api-lexxy-official.herokuapp.com/api/dowloader/tikok?url=${LinkTikTok}`)
-let tiktok = tt.result
-zaki.sendMessage(from, { video: { url: tiktok.video_original }, caption: `Download From ${LinkTikTok}`}, { quoted: msg})
-break
-
-case prefix+'id':
-reply(from)
-break
-			
-			
-case prefix+'owner': case prefix+'dev':
+	case prefix+'id':
+		reply(from)
+		   break
+		case prefix+'owner': case prefix+'dev':
             sendContact(from, ownerNumber.split('@s.whatsapp.net')[0], ownerName, msg)
            .then((res) => zaki.sendMessage(from, { text: 'Itu Nomor Owner Kak.' }, {quoted: res}))
             break
-
-case prefix+'sendsesi':
-var anu = fs.readFileSync('./jo.json')
+	case prefix+'sendsesi':
+	var anu = fs.readFileSync('./jo.json')
 zaki.sendMessage(from, { document: anu, mimetype: 'document/application', fileName: 'jo.json'}, {quoted: msg } )
 reply(`*Note :*\n_Session Bot Bersifat Untuk Pribadi Dari Owner Maupun Bot, Tidak Untuk User Bot Ataupun Pengguna Bot._`)
 reply(`_Sedang Mengirim Document_\n_Nama Session : ${setting.sessionName}.json_\n_Mohon Tunggu Sebentar..._`)
 break
-			
-		case prefix+'runtime':
+case prefix+'runtime':
 case prefix+'time':
 let timetext =`*Runtime Bot :*\n_${runtime(process.uptime())}_`
 reply(timetext)
@@ -1144,7 +1128,7 @@ case prefix + 'delrespon':
 			    }
 			    break
 
-case prefix+'exif':
+		case prefix+'exif':
 			if (!isOwner) return reply(mess.OnlyOwner)
 			    var namaPack = q.split('|')[0] ? q.split('|')[0] : q
                 var authorPack = q.split('|')[1] ? q.split('|')[1] : ''
@@ -1152,11 +1136,17 @@ case prefix+'exif':
 				reply(`Sukses membuat exif`)
 				addCmd(command.slice(1), 1, commund)
 			break
-        
-            
-            
-            
+			case prefix+'tiktok':
+if (!q) return reply(`FORMAT TIKTOK DOWNLOAD\nExample:\n${command} UrlTiktok\n\nContoh:\n${command} https://vt.tiktok.com/ZSdqSfBxG/?k=1`)
 
+var LinkTikTok = body.slice(8)
+reply(mess.wait)
+
+let tt = await fetchJson(`https://api-lexxy-official.herokuapp.com/api/dowloader/tikok?url=${LinkTikTok}`)
+let tiktok = tt.result
+zaki.sendMessage(from, { video: { url: tiktok.video_original }, caption: `Download From ${LinkTikTok}`}, { quoted: msg})
+break
+        
 default:
 if (isCmd) {
     if (args[0].length > 1) {
