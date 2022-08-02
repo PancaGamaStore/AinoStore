@@ -472,7 +472,6 @@ const wiwik = `*MAIN MENU*
  • .owner
  • .sticker
  • .tiktok
- • .jasabot
  
 *STORE MENU*
  • .list
