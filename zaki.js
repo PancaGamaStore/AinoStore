@@ -472,9 +472,10 @@ const wiwik = `*MAIN MENU*
  • .owner
  • .sticker
  • .tiktok
+ • .jasabot
  
 *STORE MENU*
- • .shop
+ • .list
  • .addlist
  • .dellist
  • .update
@@ -571,8 +572,56 @@ reply(`*Menu Layanan*🛍️
  • CANVAA
 
 *LAINNYA*
- • ROOMTUR`)
+ • ROOMTUR
+ • JASABOT`)
 break
+			
+			case prefix+'jasabot':
+			if (!isGroup) return reply(mess.OnlyGrup)
+reply(`*Jasa Bot Store WA*
+
+- Sewa Bot = Rp5.000
+_Wa Bot dari Admin.( No ribet, Gk perlu download apapun, on 24 jam, Bot Fast Respon, No Delay, Hemat Kuota)_
+
+- Jadi Bot = Rp25.000
+_Wa Bot Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Bisa jadi Owner Bot & Bisa di Sewain, Hemat Kuota)_
+
+- Jasa Run = Rp25.000
+_SC Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Hemat Kuota, Free 5x Scan)_
+
+➛ *Keuntungan Bot dari Kami*
+_⊳ Tinggal Scan_
+_⊳ Online 24 Jam_
+_⊳ Fast Respon_
+_⊳ Data Mati Tetep Online_
+_⊳ Bot No Internet_
+_⊳ Anti Delay_
+_⊳ Hemat Kuota_
+_⊳ Bisa Req NamaBot & Owner_ ( Khusus Jadi Bot & Jasa Run )`
+      break
+      
+      case prefix+'jasabot':
+      reply(`*Jasa Bot Store WA*
+
+- Sewa Bot = Rp5.000
+_Wa Bot dari Admin.( No ribet, Gk perlu download apapun, on 24 jam, Bot Fast Respon, No Delay, Hemat Kuota)_
+
+- Jadi Bot = Rp25.000
+_Wa Bot Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Bisa jadi Owner Bot & Bisa di Sewain, Hemat Kuota)_
+
+- Jasa Run = Rp25.000
+_SC Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Hemat Kuota, Free 5x Scan)_
+
+➛ *Keuntungan Bot dari Kami*
+_⊳ Tinggal Scan_
+_⊳ Online 24 Jam_
+_⊳ Fast Respon_
+_⊳ Data Mati Tetep Online_
+_⊳ Bot No Internet_
+_⊳ Anti Delay_
+_⊳ Hemat Kuota_
+_⊳ Bisa Req NamaBot & Owner_ ( Khusus Jadi Bot & Jasa Run )`
+      break
 	
 			case 'dmml':
 			if (!isGroup) return reply(mess.OnlyGrup)
@@ -624,17 +673,17 @@ _1-10 MENIT | VIA ID_
 70💎 = Rp10.000
 100💎 = Rp14.000
 140💎 = Rp20.000
-210💎 = Rp29.000
-355💎 = Rp48.000
-500💎 = Rp68.000
-720💎 = Rp96.000
-1000💎 = Rp136.000
-2000💎 = Rp261.000
-7290💎 = Rp957.000
-36.500💎 = Rp4.785.000
-73.100💎 = Rp9.570.000
+210💎 = Rp30.000
+355💎 = Rp49.000
+500💎 = Rp70.000
+720💎 = Rp99.000
+1000💎 = Rp140.000
+2000💎 = Rp270.000
+7290💎 = Rp990.000
+36.500💎 = Rp4.900.000
+73.100💎 = Rp9.550.000
 
-MM 💳 = 29.000
+MM 💳 = 30.000
 MB 💳 = Rp145.000`)
 break
 			
@@ -689,7 +738,7 @@ _FAST SELAGI ON_
 300M : Rp.16.500
 400M : Rp22.000
 500M : Rp27.500
-1B - 4B : Rp58.000
+1B ++ : Rp58.000
 
 *Kirim Chip Bongkaran Ke :*
 ID : 288944661
@@ -702,7 +751,7 @@ break
 reply(`GENESIS CRYSTALS GENSHIN IMPACT
 5-30 MENIT | VIA ID
 
-60 💎 = Rp14.000
+60 💎 = Rp15.000
 300+30 💎 = Rp65.000
 980+110 💎 = Rp190.000
 1980+260 💎 = Rp410.000
@@ -732,8 +781,8 @@ break
 reply(`*SUBSCRIBE COA MONTHLY PASS*
 _VIA LOGIN MOONTON/FB ONLY_
 
-COA FAST 🌟 : Rp70.000 (Max 3Jam)
-COA SLOW 🌟 : Rp65.000 (Max 24Jam)
+COA FAST 🌟 : Rp75.000 (Max 3Jam)
+COA SLOW 🌟 : Rp68.000 (Max 24Jam)
 
 *Keuntungan COA :*
 - Harga Murah, 1 COA setara dengan 1 Diamond
@@ -941,7 +990,7 @@ reply(textServerNya)
 break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
-        case prefix+'shop':
+        case prefix+'list':
             if (!isGroup) return reply(mess.OnlyGrup)
             if (db_respon_list.length === 0) return reply(`Belum ada list message di database`)
             if (!isAlreadyResponListGroup(from, db_respon_list)) return reply(`Belum ada list message yang terdaftar di group ini`)
@@ -955,7 +1004,7 @@ break
                 }
             }
             var listMsg = {
-                text: `Hi @${sender.split("@")[0]}`,
+                text: `Irasshaimase @${sender.split("@")[0]}`,
                 buttonText: 'Click Here!',
                 footer: `*List From ${groupName}*\n\n⏳ ${jam}\n📆 ${tanggal}`,
                 mentions: [sender],
