@@ -563,82 +563,6 @@ case prefix+'time':
 let timetext =`*Runtime Bot :*\n_${runtime(process.uptime())}_`
 reply(timetext)
 break
-			
-			case prefix+'sticker': case prefix+'stiker': case prefix+'s':
-			    if (isImage || isQuotedImage) {
-		           var stream = await downloadContentFromMessage(msg.message.imageMessage || msg.message.extendedTextMessage?.contextInfo.quotedMessage.imageMessage, 'image')
-			       var buffer = Buffer.from([])
-			       for await(const chunk of stream) {
-			          buffer = Buffer.concat([buffer, chunk])
-			       }
-			       var rand1 = 'sticker/'+getRandom('.jpg')
-			       var rand2 = 'sticker/'+getRandom('.webp')
-			       fs.writeFileSync(`./${rand1}`, buffer)
-			       ffmpeg(`./${rand1}`)
-				.on("error", console.error)
-				.on("end", () => {
-				  exec(`webpmux -set exif ./sticker/data.exif ./${rand2} -o ./${rand2}`, async (error) => {
-				    zaki.sendMessage(from, { sticker: fs.readFileSync(`./${rand2}`) }, { quoted: msg })
-				    
-					fs.unlinkSync(`./${rand1}`)
-			            fs.unlinkSync(`./${rand2}`)
-			          })
-				 })
-				.addOutputOptions(["-vcodec", "libwebp", "-vf", "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse"])
-				.toFormat('webp')
-				.save(`${rand2}`)
-			    } else if (isVideo || isQuotedVideo) {
-				 var stream = await downloadContentFromMessage(msg.message.imageMessage || msg.message.extendedTextMessage?.contextInfo.quotedMessage.videoMessage, 'video')
-				 var buffer = Buffer.from([])
-				 for await(const chunk of stream) {
-				   buffer = Buffer.concat([buffer, chunk])
-				 }
-			     var rand1 = 'sticker/'+getRandom('.mp4')
-				 var rand2 = 'sticker/'+getRandom('.webp')
-			         fs.writeFileSync(`./${rand1}`, buffer)
-			         ffmpeg(`./${rand1}`)
-				  .on("error", console.error)
-				  .on("end", () => {
-				    exec(`webpmux -set exif ./sticker/data.exif ./${rand2} -o ./${rand2}`, async (error) => {
-				      zaki.sendMessage(from, { sticker: fs.readFileSync(`./${rand2}`) }, { quoted: msg })
-				      
-					  fs.unlinkSync(`./${rand1}`)
-				      fs.unlinkSync(`./${rand2}`)
-				    })
-				  })
-				 .addOutputOptions(["-vcodec", "libwebp", "-vf", "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse"])
-				 .toFormat('webp')
-				 .save(`${rand2}`)
-                } else {
-			       reply(`Kirim gambar/vidio dengan caption ${command} atau balas gambar/vidio yang sudah dikirim\nNote : Maximal vidio 10 detik!`)
-			    }
-			    break
-
-case prefix+'exif':
-			if (!isOwner) return reply(mess.OnlyOwner)
-			    var namaPack = q.split('|')[0] ? q.split('|')[0] : q
-                var authorPack = q.split('|')[1] ? q.split('|')[1] : ''
-                exif.create(namaPack, authorPack)
-				reply(`Sukses membuat exif`)
-				addCmd(command.slice(1), 1, commund)
-			break
-
-case prefix+'cekserver':
-case prefix+'server':
-reply('Testing Server..')
-let servernya = await fetchJson(`https://api-neobot.herokuapp.com/statistic`)
-let textServerNya = `
-*INFO SERVER BOT*
-_Status : ${servernya.status}_
-_Creator : ${servernya.creator}_
-_Runtime : ${servernya.runtime}_
-_Visitor : ${servernya.visitor}_
-
-_*Quotes :*_
-${servernya.quotes}
-`
-reply(textServerNya)
-break
         
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
         case prefix+'list':
@@ -656,7 +580,7 @@ break
             }
             var listMsg = {
                 text: `Irasshaimase @${sender.split("@")[0]}`,
-                buttonText: 'Click Here!',
+                buttonText: 'Klik 2x Jika Tidak Respon',
                 footer: `*List From ${groupName}*\n\n⏳ ${jam}\n📆 ${tanggal}`,
                 mentions: [sender],
                 sections: [{
@@ -1170,6 +1094,64 @@ case prefix + 'delrespon':
                     console.log(color('[ERROR]', 'red'), err)
                 }
                 break
+		case prefix+'sticker': case prefix+'stiker': case prefix+'s':
+			    if (isImage || isQuotedImage) {
+		           var stream = await downloadContentFromMessage(msg.message.imageMessage || msg.message.extendedTextMessage?.contextInfo.quotedMessage.imageMessage, 'image')
+			       var buffer = Buffer.from([])
+			       for await(const chunk of stream) {
+			          buffer = Buffer.concat([buffer, chunk])
+			       }
+			       var rand1 = 'sticker/'+getRandom('.jpg')
+			       var rand2 = 'sticker/'+getRandom('.webp')
+			       fs.writeFileSync(`./${rand1}`, buffer)
+			       ffmpeg(`./${rand1}`)
+				.on("error", console.error)
+				.on("end", () => {
+				  exec(`webpmux -set exif ./sticker/data.exif ./${rand2} -o ./${rand2}`, async (error) => {
+				    zaki.sendMessage(from, { sticker: fs.readFileSync(`./${rand2}`) }, { quoted: msg })
+				    
+					fs.unlinkSync(`./${rand1}`)
+			            fs.unlinkSync(`./${rand2}`)
+			          })
+				 })
+				.addOutputOptions(["-vcodec", "libwebp", "-vf", "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse"])
+				.toFormat('webp')
+				.save(`${rand2}`)
+			    } else if (isVideo || isQuotedVideo) {
+				 var stream = await downloadContentFromMessage(msg.message.imageMessage || msg.message.extendedTextMessage?.contextInfo.quotedMessage.videoMessage, 'video')
+				 var buffer = Buffer.from([])
+				 for await(const chunk of stream) {
+				   buffer = Buffer.concat([buffer, chunk])
+				 }
+			     var rand1 = 'sticker/'+getRandom('.mp4')
+				 var rand2 = 'sticker/'+getRandom('.webp')
+			         fs.writeFileSync(`./${rand1}`, buffer)
+			         ffmpeg(`./${rand1}`)
+				  .on("error", console.error)
+				  .on("end", () => {
+				    exec(`webpmux -set exif ./sticker/data.exif ./${rand2} -o ./${rand2}`, async (error) => {
+				      zaki.sendMessage(from, { sticker: fs.readFileSync(`./${rand2}`) }, { quoted: msg })
+				      
+					  fs.unlinkSync(`./${rand1}`)
+				      fs.unlinkSync(`./${rand2}`)
+				    })
+				  })
+				 .addOutputOptions(["-vcodec", "libwebp", "-vf", "scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse"])
+				 .toFormat('webp')
+				 .save(`${rand2}`)
+                } else {
+			       reply(`Kirim gambar/vidio dengan caption ${command} atau balas gambar/vidio yang sudah dikirim\nNote : Maximal vidio 10 detik!`)
+			    }
+			    break
+
+case prefix+'exif':
+			if (!isOwner) return reply(mess.OnlyOwner)
+			    var namaPack = q.split('|')[0] ? q.split('|')[0] : q
+                var authorPack = q.split('|')[1] ? q.split('|')[1] : ''
+                exif.create(namaPack, authorPack)
+				reply(`Sukses membuat exif`)
+				addCmd(command.slice(1), 1, commund)
+			break
         
             
             
