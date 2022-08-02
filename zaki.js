@@ -565,6 +565,25 @@ let timetext =`*Runtime Bot :*\n_${runtime(process.uptime())}_`
 reply(timetext)
 break
 			
+			case prefix+'jasabot':
+      reply(`Jasa Bot Store WA
+- Sewa Bot = Rp5.000
+Wa Bot dari Admin.( No ribet, Gk perlu download apapun, on 24 jam, Bot Fast Respon, No Delay, Hemat Kuota)
+- Jadi Bot = Rp25.000
+Wa Bot Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Bisa jadi Owner Bot & Bisa di Sewain, Hemat Kuota)
+- Jasa Run = Rp25.000
+SC Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Hemat Kuota, Free 5x Scan)
+➛ Keuntungan Bot dari Kami
+⊳ Tinggal Scan
+⊳ Online 24 Jam
+⊳ Fast Respon
+⊳ Data Mati Tetep Online
+⊳ Bot No Internet
+⊳ Anti Delay
+⊳ Hemat Kuota
+⊳ Bisa Req NamaBot & Owner ( Khusus Jadi Bot & Jasa Run )`
+      break
+			
 			case prefix+'sticker': case prefix+'stiker': case prefix+'s':
 			    if (isImage || isQuotedImage) {
 		           var stream = await downloadContentFromMessage(msg.message.imageMessage || msg.message.extendedTextMessage?.contextInfo.quotedMessage.imageMessage, 'image')
