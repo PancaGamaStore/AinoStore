@@ -566,22 +566,22 @@ reply(timetext)
 break
 			
 			case prefix+'jasabot':
-      reply(`Jasa Bot Store WA
+      reply(`*Jasa Bot Store WA*
 - Sewa Bot = Rp5.000
-Wa Bot dari Admin.( No ribet, Gk perlu download apapun, on 24 jam, Bot Fast Respon, No Delay, Hemat Kuota)
+_Wa Bot dari Admin.( No ribet, Gk perlu download apapun, on 24 jam, Bot Fast Respon, No Delay, Hemat Kuota)_
 - Jadi Bot = Rp25.000
-Wa Bot Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Bisa jadi Owner Bot & Bisa di Sewain, Hemat Kuota)
+_Wa Bot Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Bisa jadi Owner Bot & Bisa di Sewain, Hemat Kuota)_
 - Jasa Run = Rp25.000
-SC Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Hemat Kuota, Free 5x Scan)
-➛ Keuntungan Bot dari Kami
-⊳ Tinggal Scan
-⊳ Online 24 Jam
-⊳ Fast Respon
-⊳ Data Mati Tetep Online
-⊳ Bot No Internet
-⊳ Anti Delay
-⊳ Hemat Kuota
-⊳ Bisa Req NamaBot & Owner ( Khusus Jadi Bot & Jasa Run )`
+_SC Kamu.( No Ribet, Gk perlu download apapun, on 24 jam, Hemat Kuota, Free 5x Scan)_
+➛ *Keuntungan Bot dari Kami*
+_⊳ Tinggal Scan_
+_⊳ Online 24 Jam_
+_⊳ Fast Respon_
+_⊳ Data Mati Tetep Online_
+_⊳ Bot No Internet_
+_⊳ Anti Delay_
+_⊳ Hemat Kuota_
+_⊳ Bisa Req NamaBot & Owner_ ( Khusus Jadi Bot & Jasa Run )`
       break
 			
 			case prefix+'sticker': case prefix+'stiker': case prefix+'s':
